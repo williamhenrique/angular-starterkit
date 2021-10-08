@@ -3,6 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { MarkdownModule } from 'ngx-markdown';
+import { SwiperModule } from 'swiper/angular';
 
 import { getInitialState } from '@app/ssr/tokens';
 import { EntitiesService } from '@app/services/entities/entities.service';
@@ -25,6 +26,7 @@ import { SharedModule } from '../../modules/shared.module';
 			initialState: getInitialState,
 		}),
 		SharedModule,
+		SwiperModule,
 		HomeRoutingModule,
 	],
 	providers: [EntitiesService],

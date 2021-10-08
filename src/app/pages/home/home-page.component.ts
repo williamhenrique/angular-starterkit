@@ -9,6 +9,10 @@ import { EntityInterface } from '@store/entities/entities.interface';
 import * as entitiesSelectors from '@store/entities/entities.selectors';
 import { BaseComponent } from 'components';
 
+import SwiperCore, { A11y, Keyboard, Lazy, Navigation, Virtual } from 'swiper';
+
+SwiperCore.use([A11y, Keyboard, Lazy, Navigation, Virtual]);
+
 /**
  * Home page Component which extends the BaseComponent
  */
